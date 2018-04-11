@@ -142,7 +142,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/medicine_info"
+                    android:text="@string/medicine_details"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
                 <LinearLayout
@@ -208,7 +208,7 @@
                     android:layout_marginEnd="@dimen/margin_normal"
                     android:layout_marginStart="@dimen/margin_normal"
                     android:layout_marginTop="@dimen/margin_normal"
-                    android:text="Medicine Description" />
+                    android:text=" Description" />
 
                 <TextView
                     android:id="@+id/textViewMedDescription"
@@ -218,7 +218,7 @@
                     android:layout_marginEnd="@dimen/margin_normal"
                     android:layout_marginStart="@dimen/margin_normal"
                     android:layout_marginTop="8dp"
-                    tools:text="Have a simple Medicine description here" />
+                    tools:text="This is a pain killer" />
 
                 <View
                     android:layout_width="match_parent"

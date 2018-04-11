@@ -28,11 +28,13 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.Optional;
 
 public class AuthActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
-    @BindView(R.id.loginButton)
-    Button googleLoginButton;
+    //@BindView (R.id.loginButton)
+    Button loginButton;
+
     private GoogleApiClient googleApiClient;
     private static final int ReqCode = 90;
     private AddUserViewModel addUserViewModel;
@@ -41,10 +43,11 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auth);
+        loginButton = findViewById(R.id.loginButton);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
+       // ButterKnife.bind(this);
 
         addUserViewModel = ViewModelProviders.of(this).get(AddUserViewModel.class);
 
@@ -57,7 +60,8 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
 
 
         //sign-in user on button click
-        googleLoginButton.setOnClickListener(new View.OnClickListener() {
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 signIn();
@@ -84,7 +88,7 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
                     userName,
                     userImage_Url
             ));
-           // updateView(true);
+           // persist data if logged in
             Settings.setLoggedInSharedPref(true);
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
@@ -101,14 +105,6 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
             finish();
         }
     }
-//
-//    private void updateView(Boolean isLoggedIn) {
-//
-//        if (isLoggedIn){
-//        }
-//
-//    }
-
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
@@ -119,7 +115,6 @@ public class AuthActivity extends AppCompatActivity implements GoogleApiClient.O
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == ReqCode){
-
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             handleResult(result);
         }

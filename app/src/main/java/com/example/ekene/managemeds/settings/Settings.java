@@ -26,9 +26,9 @@ public class Settings {
         defaultPrefs = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
-    /**
-     * Set Logged in
-     */
+
+    // Set Logged in
+
     public static boolean isLoggedIn() {
         return settings.getBoolean(LOGGED_IN_SHARED_PREF, false);
     }

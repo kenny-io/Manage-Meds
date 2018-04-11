@@ -24,7 +24,7 @@
                 style="@style/actionBarTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Medicine Successfully Saved" />
+                android:text="@string/saved_medicine" />
 
         </android.support.v7.widget.Toolbar>
 
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Name" />
+                    tools:text="Paracetamol" />
 
             </LinearLayout>
 
@@ -100,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Description" />
+                    tools:text="Pain Killer" />
 
             </LinearLayout>
 
@@ -119,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_normal"
                     android:layout_weight="0.5"
-                    android:text="Interval" />
+                    android:text="Frequency" />
 
                 <TextView
                     android:id="@+id/textViewMedicineInterval"
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Interval" />
+                    tools:text="2" />
 
             </LinearLayout>
 
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Start Date" />
+                    tools:text="Jan 12 2017" />
 
             </LinearLayout>
 
@@ -184,7 +184,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="End Date" />
+                    tools:text="Feb 12 2017" />
 
             </LinearLayout>
 
@@ -224,7 +224,7 @@
             android:clickable="true"
             android:focusable="true"
             android:fontFamily="@font/oxygen_bold"
-            android:text="@string/home_page"
+            android:text="@string/home"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="16sp" />

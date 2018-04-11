@@ -24,7 +24,7 @@
                 style="@style/actionBarTitle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Confirm Medicine Details" />
+                android:text="Update Medicine Data" />
 
         </android.support.v7.widget.Toolbar>
 
@@ -33,20 +33,11 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/padding_normal">
-
             <ImageView
                 android:layout_width="152dp"
                 android:layout_height="152dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_medicine_briefcase" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginLeft="@dimen/margin_normal"
-                android:layout_marginRight="@dimen/margin_normal"
-                android:layout_marginTop="51dp"
-                android:background="@color/white" />
+                app:srcCompat="@drawable/medcon" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -72,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Name" />
+                    tools:text="Panadol" />
 
             </LinearLayout>
 
@@ -100,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Description" />
+                    tools:text="Pain Killer" />
 
             </LinearLayout>
 
@@ -128,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Interval" />
+                    tools:text="3" />
 
             </LinearLayout>
 
@@ -156,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="Start Date" />
+                    tools:text="12-8-98" />
 
             </LinearLayout>
 
@@ -184,7 +175,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="end"
-                    tools:text="End Date" />
+                    tools:text="15-8-98e" />
+
 
             </LinearLayout>
 
@@ -206,11 +198,11 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/margin_normal"
             android:layout_weight=".5"
-            android:background="@drawable/edit_btn_bg"
+            android:background="@drawable/save_btn_bg"
             android:fontFamily="@font/oxygen_bold"
-            android:text="@string/edit"
+            android:text="@string/update"
             android:textAllCaps="true"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp" />
 
         <Button
@@ -220,7 +212,7 @@
             android:layout_weight=".5"
             android:background="@drawable/save_btn_bg"
             android:fontFamily="@font/oxygen_bold"
-            android:text="@string/save"
+            android:text="@string/done"
             android:textAllCaps="true"
             android:textColor="@color/white"
             android:textSize="16sp" />

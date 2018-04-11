@@ -1,50 +1,56 @@
 <resources>
+
+    <!--App level resources-->
     <string name="app_name">ManageMeds</string>
     <string name="action_settings">Settings</string>
-    <string name="dummy_date">April 11 2018</string>
-    <string name="proceed">Continue</string>
-    <string name="medicine_name">Medicine Name</string>
-    <string name="medicine_description">Medicine Description</string>
-    <string name="medicine_frequency">Medicine Frequency </string>
+    <string name="dummy_date">Nov 30 2018</string>
+    <string name="proceed">Proceed</string>
+    <!--..-->
+
+    <!--medicine related resources-->
+    <string name="med_name">Medicine Name</string>
+    <string name="med_description">Medicine Description</string>
+    <string name="med_frequency">Frequency </string>
+    <string name="medicine_details">Medicine Data</string>
+    <string name="add_medicine">Add More</string>
     <string name="start_date">Start Date</string>
     <string name="end_date">End Date</string>
+    <string name="done">Done</string>
+    <string name="saved_medicine">Saved Successfully</string>
+    <string name="med_times"> Times</string>
+    <string name="default_med_name">Default Med Name</string>
+    <string name="search_medicine">Search For Medicine</string>
+    <string name="empty_monthly_intake">No Medicine Found</string>
+    <string name="medicine_statistics"> Statistics</string>
+    <string name="activity_monthly_intake">Monthly Intake</string>
+    <!--..-->
+
+    <!--General app resources-->
     <string name="action_profile">Profile</string>
     <string name="select_activity">Select Activity</string>
-    <string name="home_page">Home Page</string>
-    <string name="add_medicine">Add Meds</string>
-    <string name="edit">Edit</string>
-    <string name="save">Save</string>
+    <string name="home">Home</string>
+    <string name="update">Update</string>
     <string name="activity_add_medicine">Add Medicine</string>
-
     <string name="preference_category_ui">User Interface</string>
     <string name="preference_theme">Theme</string>
-
-    <string name="text_sign_in_advantages">
-        When signed in:
-        \n\n&#8226; All saved Med Data will be backed up to your Drive.
-        \n\n&#8226; will also persist App preferences across app installs.
-    </string>
-
     <string name="text_empty_message"><![CDATA[
         No Medicine added. Tap the <font color=\'#FF4081\'>+</font> card to add one now.
         ]]>
     </string>
-    <string name="sign_in">Sign In </string>
     <string name="full_percentage">100%</string>
     <string name="zero_percentage">0%</string>
     <string name="percentage">%</string>
-    <string name="medicine_statistics">Medicine Statistics</string>
-    <string name="medicine_info">Medicine Info</string>
-    <string name="med_times"> Times</string>
     <string name="notification_title">Medicine</string>
-    <string name="notification_text">Please Take Your Meds</string>
-    <string name="activity_monthly_intake">Monthly Intake</string>
+    <string name="notification_text">Time To Take Your Meds</string>
     <string name="activity_reminders">Reminders</string>
-    <string name="search_medicine">Search For Medicine</string>
-    <string name="text_empty_message_monthly_intake">No Medicine Records. Please Add on the Main Dashboard</string>
     <string name="activity_search_meds">Search Meds</string>
-    <string name="default_med_name">Default Med Name</string>
+    <!--..-->
 
+    <!--Auth related resources-->
+
+    <string name="sign_in">Sign In </string>
     <string name="welcome_text">Sign Into ManageMeds</string>
+    <!--..-->
+
 
 </resources>

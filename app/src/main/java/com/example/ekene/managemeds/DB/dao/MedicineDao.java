@@ -15,7 +15,7 @@ import static android.arch.persistence.room.OnConflictStrategy.REPLACE;
 @Dao
 public interface MedicineDao {
 
-    //Get all Medicine
+    //Get all Medicine From DB
     @Query("SELECT * FROM Medicine")
     LiveData<List<Medicine>> getAllMedicine();
 
