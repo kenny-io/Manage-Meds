@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="font_name">
+            <enum value="1" name="regular"/>
+            <enum value="2" name="bold"/>
+            <enum value="3" name="light"/>
+        </attr>
+    </declare-styleable>
+    <attr name="cardColor" format="color|reference" />
+    <attr name="dividerColor" format="color|reference" />
+</resources>

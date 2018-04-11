@@ -1,0 +1,149 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="actionBarTitle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="actionBarTitleMed">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+
+    <style name="mainDashboardWelcomeText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <style name="mainDashboardNoMedicine">
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <style name="SearchView">
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="appLoginText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="allBlueButtons">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="dailyMedicineName">
+        <item name="android:textSize">21sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="dailyMedicineStatisticsHeader">
+        <item name="android:textColor">@color/dashboard</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="dailyMedicineStatisticsData">
+        <item name="android:textColor">@color/scout_blue_dashboard</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="dailyMedicineStatisticsFooter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/dashboard</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+    </style>
+
+    <style name="dailyMedicineRealization">
+        <item name="android:textColor">@color/scout_blue_dashboard_percentage</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="mainDashBoardCardActivityFooter">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+    </style>
+
+    <style name="successDataDetailsRows">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+    </style>
+
+    <style name="generalScreenHints">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="rowHeader">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/oxygen_bold</item>
+    </style>
+
+    <style name="rowLabelBody">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+    </style>
+
+    <style name="rowBody">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="medInterval">
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+    </style>
+
+    <style name="cardDataDetailsSubHeading">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+    </style>
+
+    <style name="cardDataDetailsRows">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/oxygen_regular</item>
+    </style>
+
+    <dimen name="margin_average">8dp</dimen>
+</resources>

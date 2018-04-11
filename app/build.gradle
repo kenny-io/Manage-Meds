@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.example.ekene.managemeds"
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation deps.support.appcompat
+    implementation deps.support.design
+    implementation deps.support.support
+    implementation deps.support.supportV13
+    implementation deps.support.preferencesV7
+    implementation deps.support.preferencesV14
+    implementation deps.support.cardview
+    implementation deps.support.recyclerview
+    implementation deps.support.constraintLayout
+    //Room - Sqlite Wrapper
+    implementation deps.room.core
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    annotationProcessor deps.room.compiler
+    implementation deps.room.lifecycleExtensions
+    //Butterknife - Bind Views
+    implementation deps.butterknife.core
+    annotationProcessor deps.butterknife.compiler
+    //RxJava and RxAndroid
+    implementation deps.rxjava2
+    implementation deps.rxandroid2
+    //Log - Replace the Android Log Class
+    implementation deps.timber
+    //My Lib -> Monitor Internet Connectivity
+    implementation deps.networkmanager
+    //Dagger 2 - Dependency Injection
+    implementation deps.dagger.core
+    annotationProcessor deps.dagger.compiler
+    compileOnly deps.jsr250api
+    //Glide - Handle Images
+    implementation deps.glide.core
+    annotationProcessor deps.glide.compiler
+    //Recycler View Snap Helper
+    implementation deps.snaphelper
+    // Circular Profile ImageView
+    implementation deps.circleImageView
+    // Material Dialogs alt alert dialogs
+    implementation deps.materialDialogs.core
+    // Progress SnackBar
+    implementation deps.snackProgressBar
+    //Google Auth
+    implementation deps.playServices.auth
+    //Google Drive Backup
+    implementation deps.playServices.drive
+    // State saving/restoring
+    implementation deps.state.core
+    annotationProcessor deps.state.processor
+    //Added Spark
+    implementation deps.spark
+    //Circular Progress Bar
+    //implementation deps.circleProgress
+
+    //Testing !!!
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

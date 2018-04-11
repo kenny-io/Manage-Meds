@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.medicine.ui.AddMedicineActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_normal">
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="@string/medicine_name"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_average"
+                app:srcCompat="@drawable/ic_add_medicine" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <com.example.ekene.managemeds.util.CustomEditText
+                android:id="@+id/editTextMedicineName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                android:padding="@dimen/padding_average"
+                android:singleLine="true"
+                android:textColorHint="@color/grey_500" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:alpha="0.8"
+            android:text="@string/medicine_description"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_average"
+                app:srcCompat="@drawable/ic_add_description" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <com.example.ekene.managemeds.util.CustomEditText
+                android:id="@+id/editTextMedicineDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapSentences"
+                android:padding="@dimen/padding_average"
+                android:textColorHint="@color/grey_500" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:alpha="0.8"
+            android:text="@string/medicine_frequency"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_rounded_gray"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/textViewOne"
+                style="@style/medInterval"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_login_button"
+                android:gravity="center"
+                android:onClick="textViewOne"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <TextView
+                android:id="@+id/textViewTwo"
+                style="@style/medInterval"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:onClick="textViewTwo"
+                android:text="2"
+                android:textAlignment="center"
+                android:textColor="@color/bg_login_button" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <TextView
+                android:id="@+id/textViewThree"
+                style="@style/medInterval"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:onClick="textViewThree"
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="@color/bg_login_button" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <TextView
+                android:id="@+id/textViewFour"
+                style="@style/medInterval"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:onClick="textViewFour"
+                android:text="4"
+                android:textAlignment="center"
+                android:textColor="@color/bg_login_button" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/start_date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_average"
+                app:srcCompat="@drawable/ic_add_time" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <com.example.ekene.managemeds.util.CustomEditText
+                android:id="@+id/editTextMedicineStartDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:padding="12dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/generalScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/end_date" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_average"
+                app:srcCompat="@drawable/ic_add_time" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gws_color_material_grey_500" />
+
+            <com.example.ekene.managemeds.util.CustomEditText
+                android:id="@+id/editTextMedicineEndDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:padding="12dp"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:background="@drawable/bg_blue_button"
+            android:text="@string/proceed"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>
